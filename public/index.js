@@ -14,9 +14,10 @@ const applyImage = image => {
     image.src = src;
   });
 };
+// Threshold varies from 0-1.Determines how soon image to be loaded
 const options = {
   rootMargin: "0px",
-  threshold: 0.01,
+  threshold: 1,
 };
 
 const observer = new IntersectionObserver(entries => {
